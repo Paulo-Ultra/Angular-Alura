@@ -13,9 +13,10 @@ export class UsuarioExisteService {
   usuarioJaExiste() {
     return (control: AbstractControl)=> {
       return control.valueChanges.pipe(
-        switchMap((nomeUsuario) => this.novoUsuarioService.verificaUsuarioExistente(nomeUsuario))
+        switchMap((nomeUsuario) => this.novoUsuarioService.verificaUsuarioExistente(nomeUsuario)
       ),
-      map((usuarioExiste) => (usuarioExiste ? {usuarioExistente: true} : null ),
+      map((usuarioExiste) => usuarioExiste ? {usuarioExistente: true} : null
+      ),
       first()
       );
     };

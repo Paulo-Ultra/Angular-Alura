@@ -22,8 +22,4 @@ export class TokenService {
   possuiToken() {
     return !!this.retornaToken();
   }
-
-  estaLogado() {
-    return this.possuiToken();
-  }
 }

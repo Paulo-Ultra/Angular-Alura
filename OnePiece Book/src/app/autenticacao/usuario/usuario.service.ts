@@ -36,5 +36,9 @@ export class UsuarioService {
     this.tokenService.excluiToken();
     this.usuarioSubject.next({});
   }
+
+  estaLogado() {
+    return this.tokenService.possuiToken();
+  }
 }
 
