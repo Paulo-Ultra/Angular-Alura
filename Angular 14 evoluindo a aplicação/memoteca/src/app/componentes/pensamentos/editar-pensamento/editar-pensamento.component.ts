@@ -12,7 +12,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class EditarPensamentoComponent implements OnInit {
 
   formulario!: FormGroup;
-  
+
   constructor(
     private service: PensamentoService,
     private router: Router,
@@ -33,7 +33,8 @@ export class EditarPensamentoComponent implements OnInit {
             Validators.required,
             Validators.minLength(3)
           ])],
-          modelo: [pensamento.modelo]
+          modelo: [pensamento.modelo],
+          favorito: [pensamento.favorito]
         })
       })
     }

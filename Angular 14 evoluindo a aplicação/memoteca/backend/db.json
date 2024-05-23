@@ -4,54 +4,63 @@
       "id": 1,
       "conteudo": "Que bom que você veio",
       "autoria": "Paulo",
-      "modelo": "modelo1"
+      "modelo": "modelo1",
+      "favorito": false
     },
     {
       "id": 2,
       "conteudo": "Que bom que você veio 2",
       "autoria": "Paulo",
-      "modelo": "modelo2"
+      "modelo": "modelo2",
+      "favorito": true
     },
     {
       "id": 3,
       "conteudo": "Que bom que você veio 3",
       "autoria": "Paulo",
-      "modelo": "modelo3"
+      "modelo": "modelo3",
+      "favorito": true
     },
     {
       "conteudo": "Pensamento de teste editado",
       "autoria": "Paulo Dev",
       "modelo": "modelo1",
+      "favorito": false,
       "id": 4
     },
     {
       "conteudo": "Que a força esteja com você",
       "autoria": "Paulo Jedi",
       "modelo": "modelo2",
+      "favorito": false,
       "id": 5
     },
     {
       "conteudo": "Teste",
       "autoria": "Paulo",
       "modelo": "modelo2",
+      "favorito": false,
       "id": 6
     },
     {
       "conteudo": "Teste 6",
       "autoria": "Eu mesmo",
       "modelo": "modelo3",
+      "favorito": false,
       "id": 7
     },
     {
       "conteudo": "Teste 6",
       "autoria": "Eu mesmo",
       "modelo": "modelo3",
+      "favorito": false,
       "id": 8
     },
     {
       "conteudo": "Resover bug não consegue? Esfriar a cabeça você deve!",
       "autoria": "Yoda",
       "modelo": "modelo1",
+      "favorito": false,
       "id": 9
     }
   ]
