@@ -16,7 +16,6 @@ export class AppComponent implements OnInit {
   //Métodos de ciclo de vida do Angular iniciam com "ng"
   ngOnInit(): void {
     this.listaDeCompra = this.listaService.getListaDeCompra();
-    console.log(this.listaDeCompra);
   }
 
 }
