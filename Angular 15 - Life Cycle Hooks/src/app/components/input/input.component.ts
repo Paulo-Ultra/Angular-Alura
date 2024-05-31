@@ -18,6 +18,7 @@ export class InputComponent implements OnInit, OnChanges {
   ) { }
 
   ngOnInit(): void { }
+  
   ngOnChanges(changes: SimpleChanges): void {
     if(!changes['itemQueVaiSerEditado'].firstChange) {
         this.editando = true;
