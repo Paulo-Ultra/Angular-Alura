@@ -1,20 +1,27 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
-import { TarefaService } from 'src/app/service/tarefa.service';
+import {Component, OnInit} from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {Router} from '@angular/router';
+import {TarefaService} from 'src/app/service/tarefa.service';
 
-import { checkButtonTrigger, filterTrigger, highlightedStateTrigger, showStateTrigger } from '../animations';
-import { Tarefa } from '../interface/tarefa';
+import {
+  checkButtonTrigger,
+  filterTrigger, flyInOutTrigger,
+  formButtonTrigger,
+  highlightedStateTrigger,
+  showStateTrigger
+} from '../animations';
+import {Tarefa} from '../interface/tarefa';
 
 @Component({
   selector: 'app-lista-tarefas',
   templateUrl: './lista-tarefas.component.html',
   styleUrls: ['./lista-tarefas.component.css'],
-  animations: [highlightedStateTrigger, showStateTrigger, checkButtonTrigger, filterTrigger]
+  animations: [highlightedStateTrigger, showStateTrigger, checkButtonTrigger, filterTrigger, formButtonTrigger,
+    flyInOutTrigger]
 })
 export class ListaTarefasComponent implements OnInit {
   listaTarefas: Tarefa[] = [];
-  formAberto: boolean = false;
+  formAberto: boolean = true;
   categoria: string = '';
   validado: boolean = false;
   indexTarefa = -1;
@@ -26,8 +33,8 @@ export class ListaTarefasComponent implements OnInit {
     id: [0],
     descricao: ['', Validators.required],
     statusFinalizado: [false, Validators.required],
-    categoria: ['', Validators.required],
-    prioridade: ['', Validators.required],
+    categoria: ['Casa', Validators.required],
+    prioridade: ['Alta', Validators.required],
   });
 
   constructor(
