@@ -7,7 +7,7 @@ import {
   filterTrigger,
   flyInOutTrigger,
   formButtonTrigger,
-  highlightedStateTrigger,
+  highlightedStateTrigger, listStateTrigger,
   shakeTrigger,
   showStateTrigger
 } from '../animations';
@@ -19,7 +19,7 @@ import {Subscription} from "rxjs";
   templateUrl: './lista-tarefas.component.html',
   styleUrls: ['./lista-tarefas.component.css'],
   animations: [highlightedStateTrigger, showStateTrigger, checkButtonTrigger, filterTrigger, formButtonTrigger,
-    flyInOutTrigger, shakeTrigger]
+    flyInOutTrigger, shakeTrigger, listStateTrigger]
 })
 export class ListaTarefasComponent implements OnInit {
   listaTarefas: Tarefa[] = [];
