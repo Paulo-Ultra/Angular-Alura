@@ -71,7 +71,7 @@ fieldset {
   box-sizing: border-box;
 }
 
- .radio-button {
+.radio-button {
   list-style-type: none;
   display: flex;
   gap: 24px;
@@ -166,11 +166,8 @@ input::placeholder, textarea::placeholder{
   border: 1px solid red;
 }
 
-.contato-botoes .botao-enviar:disabled {
+.contato-botoes .botao-enviar[aria-disabled] {
   background-color: #ccc;
   color: #666;
   cursor: not-allowed;
 }
-
-
-
